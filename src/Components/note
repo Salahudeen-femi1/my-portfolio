@@ -1,0 +1,98 @@
+import React from "react";
+
+type TimelineItem = {
+  id: number;
+  startYear: number | string ;
+  endYear: number | string ;
+  title: string;
+  companyOrSchool: string;
+  description: string;
+};
+
+type TimelineColumnProps = {
+  heading: string;
+  items: TimelineItem[];
+};
+
+const TimelineColumn: React.FC<TimelineColumnProps> = ({ heading, items }) => {
+  return (
+    <div className="w-full md:w-1/2 px-6">
+      <h2 className="text-2xl font-semibold tracking-wide mb-8">
+        {heading}
+      </h2>
+
+      <div className="relative pl-6">
+        {/* vertical line */}
+        <span className="absolute left-1.5 top-2 bottom-2 w-px bg-lime-400" />
+
+        {items.map((item, index) => (
+          <div key={item.id} className="relative mb-10">
+            {/* circle */}
+            <span className="absolute -left-6 top-2 w-4 h-4 rounded-full border-2 border-lime-400 bg-white" />
+
+            <p className="text-sm text-gray-500 mb-1">
+              {item.startYear} - {item.endYear}
+            </p>
+
+            <p className="text-base font-semibold tracking-wide mb-1">
+              {item.title}{" "}
+              <span className="mx-1">—</span>
+              <span className="font-bold">{item.companyOrSchool}</span>
+            </p>
+
+            <p className="text-sm text-gray-500 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const experienceItems: TimelineItem[] = [
+  {
+    id: 1,
+    startYear: 2024,
+    endYear: 'Still Going',
+    title: "FRONTEND DEVELOPER",
+    companyOrSchool: "BUGGY BILLION",
+    description:
+      "Student"
+  },
+  {
+    id: 2,
+    startYear: 'April, 2025',
+    endYear: 'September, 2025',
+    title: "FrontEnd Developer Intern",
+    companyOrSchool: "VERGOLD NIG.LTD.",
+    description:
+      "Collaborated with the development team to build and maintain responsive user interfaces using React and JavaScript. Assisted in debugging, code reviews, and implementing UI improvements.",
+  }
+];
+
+const educationItems: TimelineItem[] = [
+  {
+    id: 1,
+    startYear: 2021,
+    endYear: 2026,
+    title: "COMPUTER SCIENCE",
+    companyOrSchool: "Ladoke Akintola University (LAUTECH)",
+    description:
+      "Studying Computer Science with focus on software development, web technologies, data structures, and problem-solving. Engaged in team projects and practical assignments.",
+  },
+  
+];
+
+const ExperienceEducationSection: React.FC = () => {
+  return (
+    <section className="w-full py-16 bg-white">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
+        <TimelineColumn heading="EXPERIENCE" items={experienceItems} />
+        <TimelineColumn heading="EDUCATION" items={educationItems} />
+      </div>
+    </section>
+  );
+};
+
+export default ExperienceEducationSection;
