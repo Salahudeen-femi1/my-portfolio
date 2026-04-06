@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import { data } from "./ProjectData";
 
@@ -14,8 +13,6 @@ export default function Project() {
           />
         ))
       }
-
-      <Link to="/portfolio">View All Projects</Link>
 
     </div>
   )

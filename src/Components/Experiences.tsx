@@ -9,7 +9,7 @@ export default function Experiences() {
         <div className='absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full border-4 border-white shadow-lg z-10 top-60 '></div>
 
         <div className='ml-16 md:ml-0 md:w-1/2 md:pr-8 mb-0'>
-          <div className='bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 group w-100 m-10 flex flex-col gap-3'>
+          <div className='bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 group w-100 m-10 flex-1 flex-col gap-3'>
             <div className='bg-linear-to-r rounded-2xl from-blue-500 to-purple-500 flex w-60 text-white px-4 py-2 font-medium '>
               March 14 - September 26
             </div>

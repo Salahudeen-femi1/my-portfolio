@@ -1,4 +1,3 @@
-import React from 'react'
 import { CiMail } from "react-icons/ci";
 import { IoIosCall } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";

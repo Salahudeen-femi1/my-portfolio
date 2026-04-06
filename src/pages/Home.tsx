@@ -1,4 +1,3 @@
-import React from 'react'
 import assets from '../assets/assets'
 // import { LuGithub } from "react-icons/lu";
 // import { LuLinkedin } from "react-icons/lu";
@@ -8,10 +7,10 @@ import { CiMail } from "react-icons/ci";
 import Scrollbar from '../Components/Scrollbar';
 import { IoCodeOutline } from "react-icons/io5";
 import ExperienceEducationSection from '../Components/Experiences';
-import Project from '../Components/Project';
 import { Link } from 'react-router-dom';
 import HeroCarousel from '../Components/Hero';
 import OfferCard from '../Components/OfferCard';
+import Project from '../Components/Project';
 
 export default function Home() {
 
@@ -169,13 +168,16 @@ export default function Home() {
                     <ExperienceEducationSection />
                 </div>
 
-                <div>
+                <div className='w-full mb-10'>
 
                     <h1 className='text-[50px] font-bold text-center mb-5'>Featured Project</h1>
+
                     <Project />
+
+                    <Link to="/portfolio" className='text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-full font-semibold tracking-[.2rem] transition-all duration-300 hover:scale-105'>View All Projects</Link>
                 </div>
 
-                <div>
+                <div className='mb-10'>
                     <h1 className='text-[50px] font-bold text-center mb-5'>What i offer</h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {
