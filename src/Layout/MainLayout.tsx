@@ -1,5 +1,6 @@
 import React from "react";
 import Topnav from "./Topnav";
+import Footer from "./Footer";
 
 type LayoutProp = {
   children: React.ReactNode;
@@ -16,6 +17,10 @@ export default function MainLayout({ children }: LayoutProp) {
       {/* Page Content */}
       <div className="overflow-hidden">
         {children}
+      </div>
+
+      <div>
+        <Footer />
       </div>
 
     </>

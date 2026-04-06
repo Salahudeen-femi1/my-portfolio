@@ -1,21 +1,14 @@
-export type WaterStatus = "working" | "broken" | "maintenance";
 
-export interface WaterPoint {
-  id: number;
-  name: string;
-  location: string;
+
+export interface ProjectCardProps {
+ id: number;
+  title: string;
+  tag:string;
+  projectName: string;
   image: string;
-  status: WaterStatus;
+  slug: string;
+  year:string;
+  stacks: string[];
+  stack:string;
   
-}
-
-export interface WaterMapProps {
-  className?: string;
-  waterPoints: {
-    id: number;
-    name: string;
-    lat: number;
-    lng: number;
-    status: string;
-  }[];
 }

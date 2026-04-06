@@ -22,20 +22,20 @@ export default function Scrollbar() {
             <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent z-15" />
             <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
 
-            <div className="flex w-max animate-scroll gap-16">
+            <div className="flex w-max animate-scroll gap-20">
                 {[...techStack, ...techStack].map((tech, index) => {
 
                     return (
                         <div
                             key={index}
-                            className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors duration-100"
+                            className="flex items-center text-muted-foreground hover:text-foreground transition-colors duration-100"
                         >
                             <img
                                 src={tech.image}
                                 alt={tech.name}
                                 className="w-13 h-13 object-contain"
                             />
-                        </div>
+                        </div>  
                     );
                 })}
             </div>

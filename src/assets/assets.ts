@@ -6,6 +6,12 @@ import node from './images/node.png'
 import react from './images/react.png'
 import sparkel from './images/sparkel.jpg'
 import tailwind from './images/tailwind.png'
+import bg3 from './images/bg3.jpg'
+import abrakaeyey from './images/abrakaeyey.png'
+import cTalk from './images/cTalk.png'
+import enora from './images/enora.png'
+import pineleaf from './images/pineleaf.png'
+import buggyacade from './images/buggyacade.png'
 
 const assets = {
     mainbg,
@@ -15,7 +21,13 @@ const assets = {
     node,
     sparkel,
     tailwind,
-    react
+    react,
+    bg3,
+    abrakaeyey,
+    cTalk,
+    enora,
+    pineleaf,
+    buggyacade
 
 }
 

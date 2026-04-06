@@ -1,38 +1,41 @@
 import React from 'react'
 import assets from '../assets/assets'
-import { LuGithub } from "react-icons/lu";
-import { LuLinkedin } from "react-icons/lu";
-import { CiTwitter } from "react-icons/ci";
+// import { LuGithub } from "react-icons/lu";
+// import { LuLinkedin } from "react-icons/lu";
+// import { CiTwitter } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import Scrollbar from '../Components/Scrollbar';
 import { IoCodeOutline } from "react-icons/io5";
 import ExperienceEducationSection from '../Components/Experiences';
+import Project from '../Components/Project';
+import { Link } from 'react-router-dom';
+import HeroCarousel from '../Components/Hero';
+import OfferCard from '../Components/OfferCard';
 
 export default function Home() {
+
+    const offers = [
+        {
+            icon: IoCodeOutline,
+            title: "Frontend Development",
+            description: " Modern responsive web application using React, Next.Js and Typescript with focus on performance and user experience.",
+        },
+        {
+            icon: IoCodeOutline,
+            title: "UI/UX Implementation",
+            description: "  Pixel perfect implementation of design with smooth animations and interacting using framer motion and Tailwind."
+        },
+        {
+            icon: IoCodeOutline,
+            title: "Perfomance Optimization",
+            description: " Speed optimization, code splitting, and SEO improvement to ensure your application loads fast and "
+        }
+    ]
     return (
         <>
             <div className="w-screen h-screen flex items-center justify-center relative">
-                <img src={assets.mainbg2} alt="Background" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-black/30 z-1"></div>
-                <div className='absolute top-60 left-40  text-white z-50 shadow-2xl'>
-                    <p className='font-medium text-[30px]'>Salahudeen</p>
-                    <p className='font-semibold text-4xl uppercase'>Abdulazeez F.</p>
-                    <p className='text-sm tracking-[10px] uppercase '>Frontend Engineer</p>
-                    <div className='flex gap-3 mt-3'>
-                        <button className='rounded-full border border-white px-6 py-2 cursor-pointer'>Resume</button>
-                        <button className='rounded-full border border-white px-6 py-2 cursor-pointer'>Portofolio</button>
-                    </div>
-                </div>
-
-                <div className='fixed top-20 z-50 left-20 text-white'>
-                    <div className='flex flex-col items-center gap-2 '>
-                        <div className=' w-1 h-60 bg-gray-400 rounded-full text-white'></div>
-                        <LuGithub size={20} />
-                        <LuLinkedin size={20} />
-                        <CiTwitter size={20} />
-                    </div>
-                </div>
+                <HeroCarousel />
             </div>
 
 
@@ -83,22 +86,22 @@ export default function Home() {
                 </div>
 
                 <div className='grid md:grid-cols-2 gap-5 mb-8'>
-                    <div className='bg-wgite border border-gray-300 rounded-2xl '>
+                    <div className='bg-white border border-gray-300 rounded-2xl '>
                         <h3 className='font-semibold text-[25px] '>Core Technology Stack</h3>
                         <div className='grid grid-cols-2 gap-5 p-4'>
                             <div className='bg-gradient-to-r from-black to-gray-700 rounded-xl p-4 text-center text-white hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col items-center'>
                                 <img src={assets.next} alt="" className='w-10 h-10' />
                                 <p className='text-[25px]'>Next</p>
                             </div>
-                            <div className='bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-4 text-center text-white hover:scale-105 transition-transform duration-300 curs  flex flex-col items-center cursor-pointer'>
+                            <div className='bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-4 text-center text-white hover:scale-105 hover:bg-white transition-transform duration-300 curs  flex flex-col items-center cursor-pointer'>
                                 <img src={assets.tailwind} alt="" className='w-10 h-10' />
                                 <p className='text-[25px]'>Tailwind</p>
                             </div>
-                            <div className='bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl p-4 text-center text-white hover:scale-105 transition-transform duration-300 cursor-pointer  flex flex-col items-center'>
+                            <div className='bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl p-4 text-center text-white hover:scale-105 hover:bg-white transition-transform duration-300 cursor-pointer  flex flex-col items-center'>
                                 <img src={assets.react} alt="" className='w-10 h-10' />
                                 <p className='text-[25px]'>React</p>
                             </div>
-                            <div className='bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl p-4 text-center text-white hover:scale-105 transition-transform duration-300 cursor-pointer  flex flex-col items-center'>
+                            <div className='bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl p-4 text-center text-white hover:scale-105 hover:bg-white transition-transform duration-300 cursor-pointer  flex flex-col items-center'>
                                 <img src={assets.next} alt="" className='w-10 h-10' />
                                 <p className='text-[25px]'>TypeScript</p>
                             </div>
@@ -166,8 +169,50 @@ export default function Home() {
                     <ExperienceEducationSection />
                 </div>
 
+                <div>
 
+                    <h1 className='text-[50px] font-bold text-center mb-5'>Featured Project</h1>
+                    <Project />
+                </div>
+
+                <div>
+                    <h1 className='text-[50px] font-bold text-center mb-5'>What i offer</h1>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                        {
+                            offers.map((offer) => (
+                                <OfferCard
+                                    key={offer.title}
+                                    icon={offer.icon}
+                                    title={offer.title}
+                                    description={offer.description}
+                                />
+
+                            ))
+                        }
+                    </div >
+                </div>
             </div>
+
+            <div className="bg-[#101828] text-center p-9 flex flex-col gap-4 h-100 justify-center">
+                <h1 className='text-center tex-4xl font-bold md:text-6xl tracking-[5px] text-white'>Let's Work Together</h1>
+                <p className='text-gray-300'>
+                    Ready to bring your ideas to life? I'm always available to work on new <br /> project and collaborate with amazing people.
+                </p>
+
+                <div>
+                    <Link
+                        to="/contact"
+
+                        className='bg-gradient-to-r  from-purple-600 to-blue-600 text-white tracking-[2px] rounded-4xl px-6 py-4 m-5 cursor-pointer'>
+                        Get in touch
+                    </Link>
+                    <button className='border px-8 py-4 border-white rounded-4xl bg-transparent text-white tracking-[6px] hover:bg-white hover:text-black cursor-pointer'>
+                        Download CV
+                    </button>
+                </div>
+            </div>
+
+
 
 
 
