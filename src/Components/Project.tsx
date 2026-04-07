@@ -5,10 +5,10 @@ export default function Project() {
   return (
     <div className="grid grid-cols-3 gap-7 p-6">
       {
-        data.map((project) => (
+        data.map((projects) => (
           <ProjectCard
-            key={project.id}
-            project={project}
+            key={projects.id}
+            projects={projects}
 
           />
         ))

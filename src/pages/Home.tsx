@@ -174,7 +174,9 @@ export default function Home() {
 
                     <Project />
 
-                    <Link to="/portfolio" className='text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-full font-semibold tracking-[.2rem] transition-all duration-300 hover:scale-105'>View All Projects</Link>
+                    <div className='flex justify-center'>
+                        <Link to="/portfolio" className='text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-full font-semibold tracking-[.2rem] transition-all duration-300 hover:scale-105'>View All Projects</Link>
+                    </div>
                 </div>
 
                 <div className='mb-10'>
@@ -204,7 +206,6 @@ export default function Home() {
                 <div>
                     <Link
                         to="/contact"
-
                         className='bg-gradient-to-r  from-purple-600 to-blue-600 text-white tracking-[2px] rounded-4xl px-6 py-4 m-5 cursor-pointer'>
                         Get in touch
                     </Link>
