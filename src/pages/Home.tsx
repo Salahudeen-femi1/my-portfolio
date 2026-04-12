@@ -52,7 +52,7 @@ export default function Home() {
 
             <div>
                 <h2 className='text-center text-5xl md:text-5xl font-bold tracking-wider m-10'>About me</h2>
-                <div className='mt-10 p-5 md:mt-20 text-[14px] text-gray-600 flex flex-col justify-center gap-7 md:flex-row justify-between w-full text-justify'>
+                <div className='w-1/2 mt-8 p-5 md:mt-20 text-[14px] text-gray-600 flex flex-col gap-7 md:flex-row justify-between w-full text-justify'>
                     <p>
                         I'm a passionate Frontend Engineer with over 3 years of experience crafting digital experiences that users love. My journey started with curiosity about how websites work, and it's evolved into a career focused on building scalable, performant, and beautiful web applications.
 
@@ -66,8 +66,8 @@ export default function Home() {
 
 
                 </div>
-                <div>
-                    <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg ' />
+                <div className='w-1/2 border'>
+                    <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg flex justify-center border' />
                 </div>
             </div>
 
