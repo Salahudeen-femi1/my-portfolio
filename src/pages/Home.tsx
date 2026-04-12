@@ -64,9 +64,9 @@ export default function Home() {
                         <span className='flex items-center gap-1'><CiMail size={20} /> Available for work</span>
                     </div>
 
-
                 </div>
-                <div className='w-1/2 border'>
+
+                <div className='w-1/2 border w-full'>
                     <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg flex justify-center border' />
                 </div>
             </div>
@@ -78,7 +78,7 @@ export default function Home() {
 
                 <div className='text-center'>
                     <div className='mb-10'>
-                        <h2 className='text-[50px] font-bold '>Skills & Technologies</h2>
+                        <h2 className='text-[40px] font-bold '>Skills & Technologies</h2>
                         <p className='text-gray-500'>A comprehensive overview of my technical stack, tools and expertise in modern <br />web development</p>
                     </div>
 
