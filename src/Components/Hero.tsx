@@ -33,10 +33,6 @@ export default function HeroCarousel() {
         return () => clearInterval(interval);
     }, [isPaused]);
 
-    //   const next = () => setCurrent((prev) => (prev + 1) % slides.length);
-    //   const prev = () =>
-    //     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-
     return (
         <div
             className="w-screen h-screen relative overflow-hidden"

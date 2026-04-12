@@ -51,25 +51,23 @@ export default function Home() {
 
 
             <div>
-                <h2 className='text-center text-6xl font-bold tracking-wider m-10'>About me</h2>
-                <div className='m-20 text-[20px] text-gray-600 flex flex-col gap-7 md:flex-row justify-between w-ful'>
-                    <div>
-                        <p>
-                            I'm a passionate Frontend Engineer with over 3 years of experience <br /> crafting digital experiences that users love. My journey started with <br /> curiosity about how websites work, and it's evolved into a career focused <br /> on building scalable, performant, and beautiful web applications. <br /><br />
+                <h2 className='text-center text-5xl md:text-5xl font-bold tracking-wider m-10'>About me</h2>
+                <div className='m-10 md:m-20 text-[20px] text-gray-600 flex flex-col gap-7 md:flex-row justify-between w-full text-justify'>
+                    <p>
+                        I'm a passionate Frontend Engineer with over 3 years of experience crafting digital experiences that users love. My journey started with curiosity about how websites work, and it's evolved into a career focused on building scalable, performant, and beautiful web applications.
 
-                            When I'm not coding, you'll find me exploring new technologies,<br /> contributing to open-source projects, or sharing knowledge with the <br /> developer community. I believe in clean code, continuous learning, and <br /> creating solutions that make a real impact.
-                        </p>
+                        When I'm not coding, you'll find me exploring new technologies contributing to open-source projects, or sharing knowledge with the developer community. I believe in clean code, continuous learning, and creating solutions that make a real impact.
+                    </p>
 
-                        <div className='flex gap-3 text-gray-600 items-center mt-8'>
-                            <span className='flex items-center gap-1'><CiLocationOn size={20} /> Lagos, Nigeria</span>
-                            <span className='flex items-center gap-1'><CiMail size={20} /> Available for work</span>
-                        </div>
-
-
+                    <div className='flex gap-3 text-gray-600 items-center mt-8'>
+                        <span className='flex items-center gap-1'><CiLocationOn size={20} /> Lagos, Nigeria</span>
+                        <span className='flex items-center gap-1'><CiMail size={20} /> Available for work</span>
                     </div>
-                    <div>
-                        <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg ' />
-                    </div>
+
+
+                </div>
+                <div>
+                    <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg ' />
                 </div>
             </div>
 
@@ -121,7 +119,7 @@ export default function Home() {
                     </div>
                     <div className='bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8 border border-orange-200'>
                         <div className='flex gap-4 mb-5'>
-                            <div className='p-3 rounded-xl w-13 bg-gradient-to-br from-orange-500 text-white to-red-600'><FiDatabase size={25}/></div>
+                            <div className='p-3 rounded-xl w-13 bg-gradient-to-br from-orange-500 text-white to-red-600'><FiDatabase size={25} /></div>
                             <div>
                                 <p className='font-semibold text-[18px] '>Currently Exploring </p>
                                 <p className='text-gray-500 '>Backend & Emerging Tech</p>
@@ -230,11 +228,6 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-
-
-
-
-
 
         </>
     )
