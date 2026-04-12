@@ -49,7 +49,7 @@ const ProjectCard: React.FC<{ projects: ProjectCardProps }> = ({ projects }) => 
                 <div>
                     <h3 className="font-bold text-[16px] uppercase mb-2 text-gray-400">{projects.stack}</h3>
 
-                    <div className="grid grid-cols-4 gap-5">
+                    <div className="grid grid-cols-3 gap-5">
                         {projects.stacks.map((stack) => (
                             <div
                                 key={stack}

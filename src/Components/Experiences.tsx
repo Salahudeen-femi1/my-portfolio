@@ -21,7 +21,7 @@ export default function Experiences() {
                 <span className="text-blue-600 font-medium">Vergold</span>
                 <div className="mt-5 flex flex-wrap gap-3">
                   {['Next.js', 'Tailwind', 'Rest APIs', 'Git'].map((tag) => (
-                    <span key={tag} className="rounded-full border border-blue-500 bg-white px-3 py-1 text-[13px] font-medium text-blue-500">
+                    <span key={tag} className="rounded-full  border border-blue-500 bg-white px-3 py-1 text-[13px] font-medium text-blue-500">
                       {tag}
                     </span>
                   ))}

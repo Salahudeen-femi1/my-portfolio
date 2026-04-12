@@ -51,24 +51,26 @@ export default function Home() {
 
 
             <div>
-                <h2 className='text-center text-5xl md:text-5xl font-bold tracking-wider m-10'>About me</h2>
-                <div className='w-1/2 mt-8 p-5 md:mt-20 text-[14px] text-gray-600 flex flex-col gap-7 md:flex-row justify-between w-full text-justify'>
-                    <p>
-                        I'm a passionate Frontend Engineer with over 3 years of experience crafting digital experiences that users love. My journey started with curiosity about how websites work, and it's evolved into a career focused on building scalable, performant, and beautiful web applications.
+                <h2 className='text-center text-4xl md:text-5xl font-bold tracking-wider m-7 md:m-10'>About me</h2>
+                <div className='mt-4 p-5 md:mt-20 text-[14px] md:text-[20px] text-gray-600 flex flex-col gap-7 md:gap-0 md:flex-row justify-between w-full text-justify'>
+                    <div className='md:w-2/3'>
+                        <p>
+                            I'm a passionate Frontend Engineer with over 3 years of experience crafting digital experiences that users love. My journey started with curiosity about how websites work, and it's evolved into a career focused on building scalable, performant, and beautiful web applications.
 
-                        When I'm not coding, you'll find me exploring new technologies contributing to open-source projects, or sharing knowledge with the developer community. I believe in clean code, continuous learning, and creating solutions that make a real impact.
-                    </p>
-
-                    <div className='flex gap-3 text-gray-600 items-center mt-8'>
-                        <span className='flex items-center gap-1'><CiLocationOn size={20} /> Lagos, Nigeria</span>
-                        <span className='flex items-center gap-1'><CiMail size={20} /> Available for work</span>
+                            When I'm not coding, you'll find me exploring new technologies contributing to open-source projects, or sharing knowledge with the developer community. I believe in clean code, continuous learning, and creating solutions that make a real impact.
+                        </p>
+                        <div className='flex gap-3 text-gray-600 items-center mt-4'>
+                            <span className='flex items-center gap-1'><CiLocationOn size={20} /> Lagos, Nigeria</span>
+                            <span className='flex items-center gap-1'><CiMail size={20} /> Available for work</span>
+                        </div>
                     </div>
 
+
+                <div className=''>
+                    <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg' />
+                </div>
                 </div>
 
-                <div className='w-1/2 border w-full'>
-                    <img src={assets.me} alt="" className='w-[300px] h-[300px] object-cover rounded-lg flex justify-center border' />
-                </div>
             </div>
 
             <div className='bg-[#f9fafb] p-6 w-full'>
@@ -84,8 +86,8 @@ export default function Home() {
 
                     <div className='grid md:grid-cols-3 gap-4 mb-10'>
                         <div className='bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 font-medium text-white text-center text-2xl'> 3+ <br />Years Experience</div>
-                        <div className="bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl p-8 font-medium text-white text-center text-2xl"> 30+ <br />Years Experience</div>
-                        <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-8 font-medium text-white text-center text-2xl"> 3+ <br />Years Experience</div>
+                        <div className="bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl p-8 font-medium text-white text-center text-2xl"> 15+ <br />Project Built</div>
+                        <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-8 font-medium text-white text-center text-2xl"> 5+ <br />Technologies</div>
                     </div>
                 </div>
 
@@ -147,25 +149,24 @@ export default function Home() {
                             <p className='text-gray-500 '>Professional Workflow</p>
                         </div>
                     </div>
-
-                    <div className='flex flex-wrap gap-4'>
-                        <div className='flex items-center gap-3 bg-gray-100 w-50 px-3 py-2 rounded-lg '>
+                    <div className='grid grid-cols-1 w-full md:grid-cols-5 gap-4'>
+                        <div className='flex items-center gap-3 bg-gray-100 px-3 py-2 rounded-lg '>
                             <span className="bg-gradient-to-br from-green-500 to-teal-600 rounded-full h-1.5 w-1.5 hover:shadow-sm"></span>
                             <span className=" text-gray-600 font-medium ">Git & Github</span>
                         </div>
-                        <div className='flex items-center gap-3 bg-gray-100 w-50 px-3 py-2 rounded-lg '>
+                        <div className='flex items-center gap-3 bg-gray-100 px-3 py-2 rounded-lg '>
                             <span className="bg-gradient-to-br from-green-500 to-teal-600 rounded-full h-1.5 w-1.5 hover:shadow-sm"></span>
                             <span className=" text-gray-600 font-medium ">Vs code</span>
                         </div>
-                        <div className='flex items-center gap-3 bg-gray-100 w-50 px-3 py-2 rounded-lg '>
+                        <div className='flex items-center gap-3 bg-gray-100 px-3 py-2 rounded-lg '>
                             <span className="bg-gradient-to-br from-green-500 to-teal-600 rounded-full h-1.5 w-1.5 hover:shadow-sm"></span>
                             <span className=" text-gray-600 font-medium ">Chrome Dev. Tools</span>
                         </div>
-                        <div className='flex items-center gap-3 bg-gray-100 w-50 px-3 py-2 rounded-lg '>
+                        <div className='flex items-center gap-3 bg-gray-100 px-3 py-2 rounded-lg '>
                             <span className="bg-gradient-to-br from-green-500 to-teal-600 rounded-full h-1.5 w-1.5 hover:shadow-sm"></span>
                             <span className=" text-gray-600 font-medium ">Postman</span>
                         </div>
-                        <div className='flex items-center gap-3 bg-gray-100 w-50 px-3 py-2 rounded-lg '>
+                        <div className='flex items-center gap-3 bg-gray-100 px-3 py-2 rounded-lg '>
                             <span className="bg-gradient-to-br from-green-500 to-teal-600 rounded-full h-1.5 w-1.5 hover:shadow-sm"></span>
                             <span className=" text-gray-600 font-medium ">Figma</span>
                         </div>
