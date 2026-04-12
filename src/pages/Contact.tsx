@@ -16,7 +16,7 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 p-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5 p-5'>
         <div className='p-8 relative bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300 flex flex-col gap-3'>
           <div className='rounded-lg bg-blue-500 w-12 h-12 font-bold p-2 flex justify-center items-center text-white'>
             <CiMail size={25} />
@@ -55,7 +55,7 @@ export default function Contact() {
               <LuGithub size={30} />
 
             </a>
-            <a href="https://www.linkedin.com/in/abdulazeezsalahudeen-40b160248"
+            <a href="https://www.linkedin.com/in/abdulazeez-salahudeen-40b160248/"
               target="_blank"
               className='rounded-full cursor-pointer gap-6 bg-gradient-to-r from-purple-500 to-pink-400 text-white p-6 '>
               <LuLinkedin size={30} />

@@ -6,7 +6,7 @@ import { CiMail } from "react-icons/ci";
 
 export default function Footer() {
     return (
-        <div className='text-gray-300  bg-[#11192b] flex justify-around text-[14px] p-8 min-h-scre'>
+        <div className='text-gray-300  bg-[#11192b] flex flex-col md:flex-row justify-around text-[14px] p-8 min-h-screen'>
             <div>
                 <p className='text-xl text-white font-bold'>Salahudeen Abdulazeez F.</p>
                 <p className='text-[17px] '>Frontend Engineer</p>

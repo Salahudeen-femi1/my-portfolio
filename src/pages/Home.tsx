@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import HeroCarousel from '../Components/Hero';
 import OfferCard from '../Components/OfferCard';
 import Project from '../Components/Project';
+import { FiDatabase } from "react-icons/fi";
+import { FiTool } from "react-icons/fi";
 
 export default function Home() {
 
@@ -30,7 +32,17 @@ export default function Home() {
             title: "Perfomance Optimization",
             description: " Speed optimization, code splitting, and SEO improvement to ensure your application loads fast and "
         }
-    ]
+    ];
+
+    const downloadCV = () => {
+        const link = document.createElement('a');
+        link.href = '/resume.pdf';
+        link.download = 'Salahudeen_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <>
             <div className="w-screen h-screen flex items-center justify-center relative">
@@ -40,7 +52,7 @@ export default function Home() {
 
             <div>
                 <h2 className='text-center text-6xl font-bold tracking-wider m-10'>About me</h2>
-                <div className='m-20 text-[20px] text-gray-600 flex justify-between w-ful'>
+                <div className='m-20 text-[20px] text-gray-600 flex flex-col gap-7 md:flex-row justify-between w-ful'>
                     <div>
                         <p>
                             I'm a passionate Frontend Engineer with over 3 years of experience <br /> crafting digital experiences that users love. My journey started with <br /> curiosity about how websites work, and it's evolved into a career focused <br /> on building scalable, performant, and beautiful web applications. <br /><br />
@@ -109,7 +121,7 @@ export default function Home() {
                     </div>
                     <div className='bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8 border border-orange-200'>
                         <div className='flex gap-4 mb-5'>
-                            <div className='p-3 rounded-xl bg-gradient-to-br from-orange-500 to-red-600'></div>
+                            <div className='p-3 rounded-xl w-13 bg-gradient-to-br from-orange-500 text-white to-red-600'><FiDatabase size={25}/></div>
                             <div>
                                 <p className='font-semibold text-[18px] '>Currently Exploring </p>
                                 <p className='text-gray-500 '>Backend & Emerging Tech</p>
@@ -131,7 +143,7 @@ export default function Home() {
 
                 <div className='bg-white border border-gray-300 mb-8 p-5 rounded-2xl'>
                     <div className='flex gap-4 mb-5'>
-                        <div className='p-3 rounded-xl bg-gradient-to-br from-green-500 to-teal-600'></div>
+                        <div className='p-3 rounded-xl bg-gradient-to-br w-13 text-white from-green-500 to-teal-600'><FiTool size={25} /></div>
                         <div>
                             <p className='font-semibold text-[18px] '>Developer Tools </p>
                             <p className='text-gray-500 '>Professional Workflow</p>
@@ -203,13 +215,17 @@ export default function Home() {
                     Ready to bring your ideas to life? I'm always available to work on new <br /> project and collaborate with amazing people.
                 </p>
 
-                <div>
+                <div className='mt-6'>
                     <Link
                         to="/contact"
-                        className='bg-gradient-to-r  from-purple-600 to-blue-600 text-white tracking-[2px] rounded-4xl px-6 py-4 m-5 cursor-pointer'>
+                        className='bg-gradient-to-r  from-purple-600 to-blue-600 text-white tracking-[2px] rounded-4xl px-6 py-4 m-5 cursor-pointer '>
                         Get in touch
                     </Link>
-                    <button className='border px-8 py-4 border-white rounded-4xl bg-transparent text-white tracking-[6px] hover:bg-white hover:text-black cursor-pointer'>
+                    <button
+                        type="button"
+                        onClick={downloadCV}
+                        className='border px-8 py-4 border-white mt-10 md:mt-0 rounded-4xl bg-transparent text-white tracking-[6px] hover:bg-white hover:text-black cursor-pointer'
+                    >
                         Download CV
                     </button>
                 </div>

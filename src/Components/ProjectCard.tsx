@@ -6,7 +6,7 @@ const ProjectCard: React.FC<{ projects: ProjectCardProps }> = ({ projects }) => 
 
     return (
         <div
-            className="group rounded-[8px] bg-[#11192b] shadow hover:shadow-xl hover:-translate-y-1 
+            className="group w-auto rounded-[8px] bg-[#11192b] shadow hover:shadow-xl hover:-translate-y-1 
       transition duration-300 overflow-hidden"
         >
             {/* Image */}

@@ -1,84 +1,76 @@
 
 export default function Experiences() {
   return (
-    <>
+    <div className="bg-white py-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl font-bold text-center mb-10">Experiences</h1>
 
-      <div className='relative h-full p-5 bg-white '>
-      <h1 className='text-[50px] font-bold text-center mb-5'>Experiences</h1>
-        <div className='absolute left-8 md:left-1/2 transform md:-translate-x-px h-230 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-green-500'></div>
-        <div className='absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full border-4 border-white shadow-lg z-10 top-60 '></div>
+        <div className="relative">
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-blue-500 via-purple-500 to-green-500" />
 
-        <div className='ml-16 md:ml-0 md:w-1/2 md:pr-8 mb-0'>
-          <div className='bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 group w-100 m-10 flex-1 flex-col gap-3'>
-            <div className='bg-linear-to-r rounded-2xl from-blue-500 to-purple-500 flex w-60 text-white px-4 py-2 font-medium '>
-              March 14 - September 26
+          <div className="space-y-10">
+            <div className="relative md:max-w-[46%] md:ml-auto md:pr-8">
+              <div className="absolute left-0 md:left-[-1.75rem] top-8 md:left-auto md:right-[calc(50%_-_0.75rem)]">
+                <div className=" md:hidden h-6 w-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-4 border-white shadow-lg" />
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-3xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+                <div className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 text-sm font-medium text-white mb-4">
+                  March 14 - September 26
+                </div>
+                <p className="text-xl font-semibold mb-1">Frontend Web Developer</p>
+                <span className="text-blue-600 font-medium">Vergold</span>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {['Next.js', 'Tailwind', 'Rest APIs', 'Git'].map((tag) => (
+                    <span key={tag} className="rounded-full border border-blue-500 bg-white px-3 py-1 text-[13px] font-medium text-blue-500">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
 
-            <p className='font-semibold'>Frontend Web Developer</p>
-            <span className='text-blue-500 font-medium'>Vergold</span>
-
-            <div className='flex gap-3'>
-              <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Next.js</span>
-              <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Tailwind</span>
-              <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Rest APIs</span>
-              <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Git</span>
+            <div className="relative md:max-w-[46%] md:mr-auto md:pl-8">
+              <div className="absolute left-0 md:left-auto md:right-[calc(50%_-_0.75rem)] top-8">
+                <div className=" md:hidden h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 border-4 border-white shadow-lg" />
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+                <div className="inline-flex items-center rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 text-sm font-semibold text-white mb-4">
+                  November 10 - Still a staff
+                </div>
+                <p className="text-xl font-semibold mb-1">Frontend Web Developer</p>
+                <span className="text-blue-600 font-medium">Sunmence</span>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {['React', 'Tailwind', 'Rest APIs', 'Git'].map((tag) => (
+                    <span key={tag} className="rounded-full border border-blue-500 bg-white px-3 py-1 text-[13px] font-medium text-blue-500">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
 
-          </div>
-        </div>
-
-        <div className='relative p-5 md:flex md:justify-end'>
-          {/* <div className='absolute left-8 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-green-500'></div> */}
-          <div className='absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full border-4 border-white shadow-lg z-10 top-40 '></div>
-
-          <div className='ml-16 md:ml-0 md:pr-8'>
-            <div className='bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 group w-100 m-10 flex flex-col gap-3'>
-              <div className='bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-semibold w-60 '>
-                November 10 - Still a staff
+            <div className="relative md:max-w-[46%] md:ml-auto md:pr-8">
+              <div className="absolute left-0 md:left-auto md:right-[calc(50%_-_0.75rem)] top-8">
+                <div className=" md:hidden h-6 w-6 rounded-full bg-gradient-to-r from-green-600 to-teal-600 border-4 border-white shadow-lg" />
               </div>
-
-              <p className='font-semibold'>Frontend Web Developer</p>
-              <span className='text-blue-500 font-medium'>Sunmence</span>
-
-              <div className='flex gap-3'>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>React</span>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Tailwind</span>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Rest APIs</span>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Git</span>
+              <div className="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-3xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+                <div className="inline-flex items-center rounded-full bg-gradient-to-r from-green-600 to-teal-600 px-4 py-2 text-sm font-semibold text-white mb-4">
+                  Jan 1st - Feb 10th
+                </div>
+                <p className="text-xl font-semibold mb-1">Frontend Web Developer</p>
+                <span className="text-blue-600 font-medium">Affirment</span>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {['React', 'Tailwind', 'Rest APIs', 'Git'].map((tag) => (
+                    <span key={tag} className="rounded-full border border-blue-500 bg-white px-3 py-1 text-[13px] font-medium text-blue-500">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-
-            </div>
-          </div>
-
-        </div>
-
-
-        <div className='relative p-5 md:flex md:justify-start'>
-          {/* <div className='absolute left-8 md:left-1/2 transform md:-translate-x-px w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-green-500'></div> */}
-          <div className='absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-green-600 to-teal-600 rounded-full border-4 border-white shadow-lg z-10 top-40 '></div>
-
-          <div className='ml-16 md:ml-0 md:pr-8'>
-            <div className='bg-gradient-to-br ffrom-green-50 to-teal-50  p-8 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 group w-100 m-10 flex flex-col gap-3'>
-              <div className="bg-gradient-to-r from-green-600 to-teal-600 text-white px-4 py-2 rounded-full text-sm font-semibold w-60 ">
-                Jan 1st - Feb 10th
-              </div>
-
-              <p className='font-semibold'>Frontend Web Developer</p>
-              <span className='text-blue-500 font-medium'>Affirment</span>
-
-              <div className='flex gap-3'>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>React</span>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Tailwind</span>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Rest APIs</span>
-                <span className='rounded-full px-2 py-1 text-[13px] bg-white border border-blue-500 text-blue-500 font-medium'>Git</span>
-              </div>
-
             </div>
           </div>
         </div>
-        
       </div>
-
-    </>
-  )
+    </div>
+  );
 }
