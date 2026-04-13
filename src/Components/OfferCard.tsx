@@ -17,8 +17,8 @@ const OfferCard: React.FC<OfferCardProps> = ({
       className="w-full p-10 rounded-xl bg-white hover:bg-white hover:shadow-2xl hover:-translate-y-1 items-center flex flex-col text-center
       transition-transform duration-300 ease-in-out"
     >
-      <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-5 text-white flex items-center justify-center mb-4">
-        <Icon className="text-white text-3xl" />
+      <div className=" bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-5 text-white flex items-center justify-center mb-4">
+        <Icon className="text-white text-2xl" size={30} />
       </div>
 
       <h3 className="font-bold mb-2 text-2xl">{title}</h3>

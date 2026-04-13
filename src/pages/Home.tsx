@@ -13,6 +13,8 @@ import OfferCard from '../Components/OfferCard';
 import Project from '../Components/Project';
 import { FiDatabase } from "react-icons/fi";
 import { FiTool } from "react-icons/fi";
+import { IoColorPalette } from "react-icons/io5";
+import { IoFlashOutline } from "react-icons/io5";
 
 export default function Home() {
 
@@ -23,12 +25,12 @@ export default function Home() {
             description: " Modern responsive web application using React, Next.Js and Typescript with focus on performance and user experience.",
         },
         {
-            icon: IoCodeOutline,
+            icon: IoColorPalette,
             title: "UI/UX Implementation",
             description: "  Pixel perfect implementation of design with smooth animations and interacting using framer motion and Tailwind."
         },
         {
-            icon: IoCodeOutline,
+            icon: IoFlashOutline,
             title: "Perfomance Optimization",
             description: " Speed optimization, code splitting, and SEO improvement to ensure your application loads fast and "
         }
