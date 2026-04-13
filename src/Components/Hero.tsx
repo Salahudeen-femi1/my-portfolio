@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import assets from "../assets/assets";
+import { Link } from "react-router-dom";
 
 export default function HeroCarousel() {
     const slides = [
@@ -57,7 +58,7 @@ export default function HeroCarousel() {
                     <div className="absolute inset-0 bg-black/30"></div>
 
                     {/* Text */}
-                    <div className="absolute top-40 md:top-60 left-6 md:left-40 text-white z-20">
+                    <div className="absolute bottom-55 md:top-60 left-15 md:left-40 text-white z-20">
                         <p className="font-medium text-[20px] md:text-[30px] animate-fadeInUp">
                             {slide.name}
                         </p>
@@ -75,9 +76,9 @@ export default function HeroCarousel() {
                                 Resume
                             </button>
 
-                            <button className="rounded-full border border-white px-4 md:px-6 py-2">
+                            <Link to="/portfolio" className="rounded-full border border-white px-4 md:px-6 py-2">
                                 Portfolio
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

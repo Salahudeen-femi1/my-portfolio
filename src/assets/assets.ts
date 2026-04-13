@@ -12,6 +12,7 @@ import cTalk from './images/cTalk.png'
 import enora from './images/enora.png'
 import pineleaf from './images/pineleaf.png'
 import buggyacade from './images/buggyacade.png'
+import ts from './images/ts.jpg'
 
 const assets = {
     mainbg,
@@ -27,7 +28,8 @@ const assets = {
     cTalk,
     enora,
     pineleaf,
-    buggyacade
+    buggyacade,
+    ts
 
 }
 

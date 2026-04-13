@@ -74,13 +74,13 @@ export default function Home() {
             </div>
 
             <div className='bg-[#f9fafb] p-6 w-full'>
-                <div className='bg-blue-50 border-blue-200 rounded-full mb-8 text-blue-400 px-4 py-2 inline-flex self-center items-center gap-1 border justify-center '>
+                <div className='bg-blue-50 border-blue-200 rounded-full mb-8 text-blue-400 px-4 py-2 inline-flex justify-start items-center gap-1 border mx-auto  '>
                     <IoCodeOutline size={20} /><p>Technical Expertise</p>
                 </div>
 
                 <div className='text-center'>
                     <div className='mb-10'>
-                        <h2 className='text-[40px] font-bold '>Skills & Technologies</h2>
+                        <h2 className='text-4xl md:text-[40px] font-bold '>Skills & Technologies</h2>
                         <p className='text-gray-500'>A comprehensive overview of my technical stack, tools and expertise in modern <br />web development</p>
                     </div>
 
@@ -98,7 +98,7 @@ export default function Home() {
 
                 <div className='grid md:grid-cols-2 gap-5 mb-8'>
                     <div className='bg-white border border-gray-300 rounded-2xl '>
-                        <h3 className='font-semibold text-[25px] '>Core Technology Stack</h3>
+                        <h3 className='font-semibold text-[20px] md:text-[25px] p-5 '>Core Technology Stack</h3>
                         <div className='grid grid-cols-2 gap-5 p-4'>
                             <div className='bg-gradient-to-r from-black to-gray-700 rounded-xl p-4 text-center text-white hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col items-center'>
                                 <img src={assets.next} alt="" className='w-10 h-10' />
@@ -113,7 +113,7 @@ export default function Home() {
                                 <p className='text-[25px]'>React</p>
                             </div>
                             <div className='bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl p-4 text-center text-white hover:scale-105 hover:bg-white transition-transform duration-300 cursor-pointer  flex flex-col items-center'>
-                                <img src={assets.next} alt="" className='w-10 h-10' />
+                                <img src={assets.ts} alt="" className='w-10 h-10' />
                                 <p className='text-[25px]'>TypeScript</p>
                             </div>
                         </div>
@@ -181,7 +181,7 @@ export default function Home() {
 
                 <div className='w-full mb-10'>
 
-                    <h1 className='text-[50px] font-bold text-center mb-5'>Featured Project</h1>
+                    <h1 className='text-[35px] md:text-[50px] font-bold text-center mb-5'>Featured Project</h1>
 
                     <Project />
 
@@ -191,7 +191,7 @@ export default function Home() {
                 </div>
 
                 <div className='mb-10'>
-                    <h1 className='text-[50px] font-bold text-center mb-5'>What i offer</h1>
+                    <h1 className='text-[40px] md:text-[50px] font-bold text-center mb-5'>What i offer</h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {
                             offers.map((offer) => (

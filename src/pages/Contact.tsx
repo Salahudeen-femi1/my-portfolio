@@ -11,8 +11,8 @@ export default function Contact() {
       <div className='text-center mt-25 flex flex-col gap-3'>
         <small className='bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent text-lg font-medium'>Let's connect</small>
         <h2 className='text-7xl font-bold text-white'>Get in <span className='bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'>Touch</span></h2>
-        <p className='text-gray-200 text-[16px] '>
-          Readytobring your visiion to life? I'm always excited to discuss new <br /> project, creative ideas and opportunities to create something amazing <br /> together.
+        <p className='text-gray-200 text-[16px] md:text-[16px] md:  w-1/2 text-center mx-auto'>
+          Ready to bring your visiion to life? I'm always excited to discuss new project, creative ideas and opportunities to create something amazing together.
         </p>
       </div>
 
