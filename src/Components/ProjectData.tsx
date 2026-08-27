@@ -10,7 +10,7 @@ export const data = [
         year: "2024",
         stack: "tech stack",
         stacks:[ "Next.js", "Tailwind", "PHP"],
-        slug: "/https://buggyacademy.com.ng/"
+        slug: "https://buggyacademy.com.ng/"
         
 
     },
@@ -36,7 +36,7 @@ export const data = [
         year: "2025",
         stack: "tech stack",
         stacks:[ "React.js", "Tailwind", "PHP" ],
-        slug: "https://enora.com/"        
+        slug: "https://enoralifestyle.com/"        
 
     },
     {

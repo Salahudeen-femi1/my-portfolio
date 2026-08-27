@@ -34,6 +34,15 @@ export default function HeroCarousel() {
         return () => clearInterval(interval);
     }, [isPaused]);
 
+    const handleDownload = () => {
+        const resumeLink = document.createElement("a");
+        resumeLink.href = "/resume.pdf";
+        resumeLink.download = "Abdulazeez-Resume.pdf";
+        document.body.appendChild(resumeLink);
+        resumeLink.click();
+        resumeLink.remove();
+    };
+
     return (
         <div
             className="w-screen h-screen relative overflow-hidden"
@@ -72,7 +81,9 @@ export default function HeroCarousel() {
                         </p>
 
                         <div className="flex gap-3 mt-3 animate-fadeInUp delay-300">
-                            <button className="rounded-full border border-white px-4 md:px-6 py-2">
+                            <button 
+                            onClick={handleDownload}
+                            className="rounded-full border border-white px-4 md:px-6 py-2">
                                 Resume
                             </button>
 
